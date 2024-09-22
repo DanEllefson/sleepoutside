@@ -1,5 +1,5 @@
-import { resolve } from "path";
 import { defineConfig } from "vite";
+import { resolve } from "path";
 
 export default defineConfig({
   root: "src/",
@@ -19,10 +19,6 @@ export default defineConfig({
         product3: resolve(
           __dirname,
           "src/product_pages/northface-alpine-3.html",
-        ),
-        product4: resolve(
-          __dirname,
-          "src/product_pages/northface-talus-4.html",
         ),
       },
     },

@@ -12,19 +12,7 @@ export function getLocalStorage(key) {
 
 // save data to local storage, ensuring it is stored as an array
 export function setLocalStorage(key, data) {
-  // Retrieve existing data
-  let existingData = JSON.parse(localStorage.getItem(key));
-  
-  // Check if existing data is an array
-  if (!Array.isArray(existingData)) {
-    existingData = [];
-  }
-  
-  // Add new data to the array
-  existingData.push(data);
-  
-  // Save updated array back to local storage
-  localStorage.setItem(key, JSON.stringify(existingData));
+  localStorage.setItem(key, JSON.stringify(data));
 }
 
 // set a listener for both touchend and click
